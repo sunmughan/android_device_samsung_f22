@@ -1,10 +1,7 @@
 # Samsung Galaxy F22 4G SM-E225F / DS 
-# TWRP Device Tree
+# AOSP Device Tree
 
-TWRP Device tree for the Samsung Galaxy F22 4G MediaTek
-
-This tree compatible with TWRP 3.6.11 as of 30/04/2022
-
+AOSp Device tree for the Samsung Galaxy F22 4G MediaTek 6769T
 ---
 ![Samsung Galaxy F22 4G](https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-f22-1.jpg)
 
@@ -32,30 +29,3 @@ Rear Camera  | 48 MP, f/1.8, (wide), PDAF, 8 MP, f/2.2, 123˚ (ultrawide), 1/4.0
 Front Camera | 13 MP, f/2.2, (wide)
 
 ---
-
-#  Steps to Compile
-
- Place the device tree in proper location $SOURCE_HOME/device/samsung/f22/ 
- 
- Add AOSP TWRP Source or Minimal TWRP Source
- 
- `repo init -u https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp.git -b twrp-11`
- 
-Then Run `repo sync` 
-
-```sh
-. source ./build/envsetup.sh && lunch twrp_f22-eng && make clean && make -j# recoveryimage
-```
-`# = No. of CPU threads of your PC'
-
-#  Kernel Source here
-
- Kernel Source from which the prebuilt kernel is included in tree under prebuilt directory.
- 
- Will be added shortly.
-
-### Thanks to:
- * Me, akhil1999
- * TeamWin
- * @sunmughan for testing.
-
