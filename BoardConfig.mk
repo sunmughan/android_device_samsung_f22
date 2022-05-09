@@ -157,6 +157,10 @@ TW_NO_BIND_SYSTEM := true
 TW_NO_SCREEN_BLANK := true
 TW_USE_MODEL_HARDWARE_ID_FOR_DEVICE_ID := true
 
+# exFAT FS Support 
+TW_INCLUDE_FUSE_EXFAT := true 
+# NTFS Support 
+TW_INCLUDE_FUSE_NTFS := true
 # Hack: prevent anti rollback
 PLATFORM_SECURITY_PATCH := 2099-12-31
 # Debug
