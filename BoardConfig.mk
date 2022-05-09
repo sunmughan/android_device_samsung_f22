@@ -137,7 +137,7 @@ BOARD_USES_METADATA_PARTITION := true
 #TW_DEVICE_VERSION := 4_afaneh92
 TW_THEME := portrait_hdpi
 RECOVERY_SDCARD_ON_DATA := true
-TW_DEVICE_VERSION := akhil1999
+TW_DEVICE_VERSION := by Sunmughan
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 TW_BRIGHTNESS_PATH := "/sys/class/backlight/panel/brightness"
 TW_MAX_BRIGHTNESS := 306
@@ -156,3 +156,28 @@ TW_NO_LEGACY_PROPS := true
 TW_NO_BIND_SYSTEM := true
 TW_NO_SCREEN_BLANK := true
 TW_USE_MODEL_HARDWARE_ID_FOR_DEVICE_ID := true
+
+# Hack: prevent anti rollback
+PLATFORM_SECURITY_PATCH := 2099-12-31
+
+# Debug
+TWRP_INCLUDE_LOGCAT := true
+TARGET_USES_LOGD := true
+
+# SHRP specific build flags
+SHRP_DEVICE_CODE := f22 
+SHRP_PATH := device/samsung/$(SHRP_DEVICE_CODE) 
+SHRP_MAINTAINER := Sunmughan
+SHRP_REC_TYPE := SAR
+SHRP_DEVICE_TYPE := A/B
+SHRP_REC := </dev/block/bootdevice/by-name/recovery> 
+SHRP_EDL_MODE := 0
+SHRP_INTERNAL := /sdcard 
+SHRP_EXTERNAL := /external_sd 
+SHRP_OTG := /usb_otg 
+SHRP_FLASH := 1
+SHRP_AB := true 
+SHRP_NOTCH := true 
+SHRP_EXPRESS_USE_DATA := true 
+SHRP_DARK := true 
+SHRP_FLASH_MAX_BRIGHTNESS := 200 
