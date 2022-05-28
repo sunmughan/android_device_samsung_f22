@@ -84,5 +84,5 @@ odm                                             	   /odm         			   ext4     
 /dev/block/platform/bootdevice/by-name/protect2 	   /mnt/vendor/protect_s 	  ext4 					 			flags=display=protect_s,noatime,nosuid,nodev,noauto_da_alloc,commit=1,nodelalloc wait,check,formattable
 
 #SDCard and USB,OTG
-/dev/block/mmcblk1p1                             	  /sdcard        			 sdfat       defaults                  flags=display=sdcard;
-/devices/platform/mt_usb*							  auto 					   vfat 	   defaults 				 flags=display=usb_otg,voldmanaged=usbotg:auto
+/dev/block/mmcblk1p1								   /external_sd		   	 vfat 	                 			flags=removable;storage;display="SDCARD" 
+/dev/block/sda1										/usb-otg 			   	vfat 							     flags=removable;storage;display="USB-OTG";voldmanaged=usbotg:auto
