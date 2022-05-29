@@ -82,7 +82,3 @@ odm                                             	   /odm         			   ext4     
 /dev/block/platform/bootdevice/by-name/vbmeta_system   /vbmeta_system			  emmc	    defaults				  flags=display=vbmeta_system,first_stage_mount,nofail,,avb=vbmeta
 /dev/block/platform/bootdevice/by-name/protect1	    /mnt/vendor/protect_f  	 ext4								  flags=display=protect_f,noatime,nosuid,nodev,noauto_da_alloc,commit=1,nodelalloc wait,check,formattable
 /dev/block/platform/bootdevice/by-name/protect2 	   /mnt/vendor/protect_s 	  ext4 					 			flags=display=protect_s,noatime,nosuid,nodev,noauto_da_alloc,commit=1,nodelalloc wait,check,formattable
-
-#SDCard and USB,OTG
-/dev/block/mmcblk1p1								   /external_sd		   	 vfat 	                 			flags=removable;storage;display="SDCARD" 
-/dev/block/sda1										/usb-otg 			   	vfat 							     flags=removable;storage;display="USB-OTG";voldmanaged=usbotg:auto
